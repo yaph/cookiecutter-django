@@ -7,21 +7,21 @@ module.exports = function (grunt) {
         less: {
             dev: {
                 options: {
-                    paths: ['{{cookiecutter.module_name}}/static/{{cookiecutter.module_name}}/styles/less']
+                    paths: ['{{cookiecutter.module_name}}/static/styles/less']
                 },
                 files: {
-                    '{{cookiecutter.module_name}}/static/{{cookiecutter.module_name}}/styles/screen.css': '{{cookiecutter.module_name}}/static/{{cookiecutter.module_name}}/styles/less/screen.less'
+                    '{{cookiecutter.module_name}}/static/styles/screen.css': '{{cookiecutter.module_name}}/static/styles/less/screen.less'
                 }
             }
         },
 
         watch: {
             javascript: {
-                files: ['{{cookiecutter.module_name}}/static/{{cookiecutter.module_name}}/scripts/**/*.js'],
+                files: ['{{cookiecutter.module_name}}/static/scripts/**/*.js'],
                 options: {livereload: true}
             },
             less: {
-                files: '{{cookiecutter.module_name}}/static/{{cookiecutter.module_name}}/styles/less/**/*.less',
+                files: '{{cookiecutter.module_name}}/static/styles/less/**/*.less',
                 tasks: ['less'],
                 options: {livereload: true}
             }
