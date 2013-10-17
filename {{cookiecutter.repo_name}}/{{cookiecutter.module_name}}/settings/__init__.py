@@ -1,4 +1,4 @@
 try:
-    from {{cookiecutter.module_name}}.settings.local import *
+    from {{cookiecutter.repo_name}}.settings.local import *
 except ImportError:
-    from {{cookiecutter.module_name}}.settings.base import *
+    from {{cookiecutter.repo_name}}.settings.base import *

@@ -21,7 +21,7 @@ pip-log.txt
 .tox
 
 # Django
-{{cookiecutter.project_name}}/{{cookiecutter.module_name}}/settings/local.py
+{{cookiecutter.project_name}}/{{cookiecutter.repo_name}}/settings/local.py
 
 # Local file cruft/auto-backups
 .DS_Store

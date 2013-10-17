@@ -1,5 +1,5 @@
 import os
-from {{cookiecutter.module_name}}.settings.base import *
+from {{cookiecutter.repo_name}}.settings.base import *
 
 
 DEBUG = True

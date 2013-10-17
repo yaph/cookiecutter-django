@@ -4,7 +4,7 @@ except ImportError:
     from distutils.core import setup, find_packages
 
 setup(
-    name='{{cookiecutter.module_name}}',
+    name='{{cookiecutter.repo_name}}',
     version='0.1',
     description='{{cookiecutter.description}}',
     author='{{cookiecutter.author}}',

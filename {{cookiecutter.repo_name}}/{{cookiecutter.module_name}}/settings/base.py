@@ -2,7 +2,7 @@ import os
 import sys
 
 import dj_database_url
-import {{cookiecutter.module_name}}
+import {{cookiecutter.repo_name}}
 
 
 DEBUG = bool(os.environ.get('DEBUG', False))
@@ -85,10 +85,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 APPEND_SLASH = False
 
-ROOT_URLCONF = '{{cookiecutter.module_name}}.urls'
+ROOT_URLCONF = '{{cookiecutter.repo_name}}.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = '{{cookiecutter.module_name}}.wsgi.application'
+WSGI_APPLICATION = '{{cookiecutter.repo_name}}.wsgi.application'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -99,7 +99,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.flatpages',
     'django.contrib.admin',
-    '{{cookiecutter.module_name}}.core',
+    '{{cookiecutter.repo_name}}.core',
 )
 
 
@@ -114,7 +114,7 @@ DATABASES = {"default": dj_database_url.config()}
 # Paths
 # -----
 
-PROJECT_MODULE_PATH = os.path.dirname(os.path.realpath({{cookiecutter.module_name}}.__file__))
+PROJECT_MODULE_PATH = os.path.dirname(os.path.realpath({{cookiecutter.repo_name}}.__file__))
 PROJECT_PATH, PROJECT_MODULE_NAME = os.path.split(PROJECT_MODULE_PATH)
 
 PYTHON_BIN = os.path.dirname(sys.executable)
