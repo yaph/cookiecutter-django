@@ -1,7 +1,7 @@
 {
     "verbose_project_name": "Project Name",
     "project_name": "project_name",
-    "module_name": "module_name",
+    "repo_name": "repo_name",
     "author_name": "Your Name",
     "email": "Your email",
     "description": "A short description of the project.",
